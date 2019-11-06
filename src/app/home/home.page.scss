@@ -1,1 +1,135 @@
+@media(max-width: 576px) {
+    ion-content {
+      --ion-background-color: rgb(195, 197, 197);
+    }
+    ion-item {
+        --ion-background-color: #03a9f4;
+
+
+    }
+    h2{
+        color: rgb(235, 235, 235);  
+    }
+    p{
+        color: rgb(0, 0, 0); 
+        font-weight: bold; 
+    }
+    ion-button {
+        color: rgb(245, 220, 0);
+    }
+    ion-card-content {
+        background-color: rgb(252, 252, 252);
+    }
+    
+}
+@media(min-width: 576px) {
+    ion-content {
+      --ion-background-color:  rgb(195, 197, 197);
+    }
+    ion-item {
+        --ion-background-color: #03a9f4;
+    }
+    h2{
+        color: rgb(235, 235, 235);  
+    }
+    p{
+        color: rgb(0, 0, 0);
+        font-weight: bold;  
+    }
+    ion-button {
+        color: rgb(245, 220, 0);
+    }
+    ion-card-content {
+        background-color: rgb(252, 252, 252);
+    }
+    
+}
+@media(min-width: 768px) {
+    ion-content {
+      --ion-background-color:  rgb(195, 197, 197);
+    }
+    ion-item {
+        --ion-background-color: #03a9f4;
+    }
+    h2{
+        color: rgb(235, 235, 235);  
+    }
+    p{
+        color: rgb(0, 0, 0); 
+        font-weight: bold; 
+    }
+    ion-button {
+        color: rgb(245, 220, 0);
+    }
+    ion-card-content {
+        background-color: rgb(252, 252, 252);
+    }
+    
+}
+@media(min-width: 992px) {
+    ion-content {
+      --ion-background-color:  rgb(195, 197, 197);
+    }
+    ion-item {
+        --ion-background-color: #03a9f4;
+    }
+    h2{
+        color: rgb(235, 235, 235);  
+    }
+    p{
+        color: rgb(0, 0, 0); 
+        font-weight: bold; 
+    }
+    ion-button {
+        color: rgb(245, 220, 0);
+    }
+    ion-card-content {
+        background-color: rgb(252, 252, 252);
+    }
+    
+}
+@media(min-width: 1200px) {
+    ion-content {
+      --ion-background-color:  rgb(195, 197, 197);
+    }
+    ion-item {
+        --ion-background-color: #03a9f4;
+    }
+    h2{
+        color: rgb(235, 235, 235);  
+    }
+    p{
+        color: rgb(0, 0, 0);  
+        font-weight: bold;
+    }
+    ion-button {
+        color: rgb(245, 220, 0);
+    }
+    ion-card-content {
+        background-color: rgb(252, 252, 252);
+    }
+    
+}
+
+@media(orientation: landscape) {
+    #telefono {display:none}
+}
+@media(orientation: portrait) {
+    #email {display:none}
+}
+
+@media(orientation: portrait) {
+    #ojos {display:none}
+}
+
+@media(orientation: portrait) {
+    #Direccion {display:none}
+}
+
+@media(orientation: portrait) {
+    #genero {display:none}
+}
+
+
+
 

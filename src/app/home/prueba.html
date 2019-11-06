@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Ionic Blank
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+    <ion-grid><ion-row>
+        <ion-col *ngFor="let user of users | async" size-xs="12" size-sm="6" size-md="4" size-lg="2" size-xl="1" >
+            <ion-card>
+            <ion-item>
+              <ion-avatar item-start>
+              </ion-avatar>
+              <h2>{{ user.name }}</h2>
+            </ion-item>
+            <ion-card-content>
+                <table id="tabla" class="contacto">
+                    <tr>
+                      <h3><p>Nombre: {{ user.name }}</p> </h3>
+                      <h3><p>Edad: {{ user.age }}</p> </h3>
+                    </tr>
+                    <hr>
+                    <tr>
+                      <h3><p>Email: {{ user.email }}</p> </h3>
+                      <h3><p>Tlfn: {{ user.phone }}</p> </h3>
+                    </tr>
+                    <hr>
+                    <tr>
+                      <h3 id="color_ojos"><p>Color de ojos: {{ user.eyeColor }}</p> </h3>
+                      <!-- <h3><p>Género:</p> {{ user.gender }} </h3> -->
+  
+                      <h3 id="genero" *ngIf= "user.gender == 'male'" >
+                        genero: 
+                        <ion-radio-group>
+                          <ion-item>
+                            <ion-label>Hombre</ion-label>
+                            <ion-radio slot="start" name=" genero" value="Hombre" checked></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>Mujer</ion-label>
+                            <ion-radio slot="start" name=" genero" value="Mujer"></ion-radio>
+                          </ion-item>
+                        </ion-radio-group>
+                      </h3>
+                      <h3 id="genero" *ngIf= "user.gender == 'female'" >genero: 
+                        <ion-radio-group>
+                          <ion-item>
+                            <ion-label>Hombre</ion-label>
+                            <ion-radio slot="start" name=" genero" value="Hombre"></ion-radio>
+                          </ion-item>
+                          <ion-item>
+                            <ion-label>Mujer</ion-label>
+                            <ion-radio slot="start" name=" genero" value="Mujer" checked></ion-radio>
+                          </ion-item>
+                        </ion-radio-group>
+                      </h3>
+  
+  
+                    </tr>
+                  </table>
+                  
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
